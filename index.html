@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="CSS/base.css">
+  <link rel="stylesheet" href="CSS/layout.css">
+  <link rel="stylesheet" href="CSS/home.css">
+</head>
+<body>
+
+  <header class="Header">
+    <a href="index.html#Home" class="Logo">MySite</a>
+    <nav class="Navigation">
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Weather">Weather</a></li>
+        <li><a href="#Advice">Advice</a></li>
+      </ul>
+    </nav>
+    <a href="signup.html" class="SignupButton">Signup</a>
+  </header>
+
+  <main id="Main">
+    <section id="Home" class="Content">
+        <div class="HomeHero">
+          <h1>Welcome to MySite</h1>
+          <p>Your personal dashboard for weather updates and helpful advice.</p>
+          <a href="#Weather" class="HeroButton">Check the Weather</a>
+        </div>
+      
+        <div class="HomeFeatures">
+          <div class="FeatureCard">
+            <h2>Weather Dashboard</h2>
+            <p>Stay updated with current conditions and forecasts.</p>
+          </div>
+          <div class="FeatureCard">
+            <h2>Advice</h2>
+            <p>Get daily tips based on the weather and conditions around you.</p>
+          </div>
+          <div class="FeatureCard">
+            <h2>Easy to Use</h2>
+            <p>Simple interface designed for clarity and speed.</p>
+          </div>
+        </div>
+      </section>
+      
+
+    <section id="Weather" class="Content">
+        <h1>Weather Dashboard</h1>
+      
+        <div class="WeatherDashboard">
+          <div class="WeatherCard">
+            <h2>Temperature</h2>
+            <p>25°C</p>
+          </div>
+          <div class="WeatherCard">
+            <h2>Wind Speed</h2>
+            <p>12 km/h</p>
+          </div>
+          <div class="WeatherCard">
+            <h2>Humidity</h2>
+            <p>60%</p>
+          </div>
+          <div class="WeatherCard">
+            <h2>Precipitation</h2>
+            <p>5 mm</p>
+          </div>
+          <div class="WeatherCard">
+            <h2>UV Index</h2>
+            <p>3</p>
+          </div>
+          <div class="WeatherCard WeatherCondition">
+            <h2>Condition</h2>
+            <div class="ConditionIcon">☀️</div>
+            <p>Sunny</p>
+          </div>
+        </div>
+      </section>
+      
+      <section id="Advice" class="Content">
+        <h1>Advice</h1>
+        <div class="AdviceContent">
+          <p>Placeholder advice: “Remember to stay hydrated and wear sunscreen if it’s sunny.”</p>
+        </div>
+      </section>
+  </main>
+
+  <footer class="Footer">
+    <p>© 2025 MySite. All rights reserved.</p>
+  </footer>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>
