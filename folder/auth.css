@@ -1,0 +1,94 @@
+/* Auth Pages (Login + Signup) */
+body.auth-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+  }
+  
+  body.auth-page .Header,
+  body.auth-page .Footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+  body.auth-page .Header {
+    top: 0;
+    height: 70px;
+  }
+  
+  body.auth-page .Footer {
+    bottom: 0;
+    height: 60px;
+  }
+  
+  /* Auth content */
+  body.auth-page .Main {
+    flex: 1 1 auto;
+    margin-top: 70px;   /* leave space for header */
+    margin-bottom: 60px;/* leave space for footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .AuthContainer {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    color: #555;
+  }
+  
+  .AuthContainer h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .AuthContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .AuthContainer input {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .AuthContainer input:focus {
+    border-color: #0077ff;
+  }
+  
+  .AuthContainer button {
+    padding: 12px 15px;
+    background: #0077ff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .AuthContainer button:hover {
+    background: #005fcc;
+  }
+  
+  .AuthContainer a {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0077ff;
+    text-decoration: underline;
+  }
+  

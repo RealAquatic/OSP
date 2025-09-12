@@ -1,0 +1,35 @@
+/* Base Reset + Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  html, body {
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+  }
+  
+  /* Links */
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  a:hover {
+    color: #0077ff;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5 {
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
