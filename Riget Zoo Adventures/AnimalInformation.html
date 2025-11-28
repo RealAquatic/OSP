@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RZA | Educational Visits</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="CSS/AnimalInformation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Display -->
+    
+    <div class="Display">
+        <div class="Header">
+            <div class="TopBar">
+                <div class="Logo">RZA</div>
+                <div class="SiteTitle"> <a href="index.html">Riget Zoo Adventures</a></div>
+            </div>
+        
+            <div class="BottomBar">
+                <a href="#">Book Your Tickets</a>
+                <a href="educational.html">Educational Visits</a>
+                <a href="information.html">Information</a>
+                <a href="#">Account</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="Content">
+        <h id="Search">Currently searching for: </h>
+
+        <div class="SearchContainer">
+            <input list="animalList" type="text" id="animalSearch" placeholder="Search for an animal...">
+            <datalist id="animalList"></datalist>
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <p id="validationMessage" style="color: darkred; margin-left: 4vw;"></p>
+        
+    </div>
+    <!-- Footer -->
+
+    <div class="Footer">
+        <img src="Images/Footer.png" class="FooterImage">
+        <div class="FooterContent">
+            <div class="FooterLogo">RZA</div>
+            <div class="FooterInfo">
+                <p>Call us: 01790-00000</p>
+                <p>Email: <a href="mailto:rzasupport@gmail.com">rzasupport@gmail.com</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="JS/AnimalApi.js"></script>
+</body>
+</html>

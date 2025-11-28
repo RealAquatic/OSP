@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RZA | Educational Visits</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="CSS/information.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Display -->
+    
+    <div class="Display">
+        <div class="Header">
+            <div class="TopBar">
+                <div class="Logo">RZA</div>
+                <div class="SiteTitle"> <a href="index.html">Riget Zoo Adventures</a></div>
+            </div>
+        
+            <div class="BottomBar">
+                <a href="#">Book Your Tickets</a>
+                <a href="educational.html">Educational Visits</a>
+                <a href="information.html" style="color: rgb(202, 182, 154);"> Information</a>
+                <a href="#">Account</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+
+    <div class="Content">
+        <p>Riget Zoo Adventures</p>
+        <h>Information</h>
+        <p>Find information about an animal!</p>
+
+        <div class="SearchContainer">
+            <input list="animalList" type="text" id="animalSearch" placeholder="Search for an animal...">
+            <datalist id="animalList"></datalist>
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <p id="validationMessage" style="color: darkred; margin-left: 4vw;"></p>
+        
+        <br>
+        <br>
+        <p><u>Visitor Information</u></p>
+        <p>Welcome to Wildlands Zoo, a place where adventure, education, and wildlife conservation come together. Below you’ll find helpful information about our attractions, facilities, and services to make your visit enjoyable and memorable.
+            Attractions
+        </p>
+
+        <p><br><u>🐾 Animal Exhibits</u></p>
+        <p>Explore over 150 species from around the world, including:
+            <br>• African Savannah – Lions, giraffes, zebras, and meerkats.
+            <br>• Rainforest Trail – Tropical birds, sloths, amphibians, and exotic reptiles.
+            <br>• Australian Outback – Kangaroos, wallabies, and emus.
+            <br>• Reptile House – Snakes, lizards, tortoises, and a touch-friendly educational zone.            
+        </p>
+
+        <p><br><u>🦋 Butterfly Garden</u></p>
+        <p>Step into a warm, lush environment filled with hundreds of free-flying butterflies from various continents.
+        </p>
+
+        <p><br><u>🐒 Kids' Adventure Zone</u></p>
+        <p>A fun, educational play area featuring:
+            <br>• Rope bridges
+            <br>• Mini climbing walls
+            <br>• Interactive animal learning stations
+            </p>
+           
+        <p><br><u>🌊 Penguin Cove</u></p>
+        <p>Watch our playful penguins dive, swim, and waddle in a recreated coastal habitat with underwater viewing windows.
+        </p>
+
+        <p><br><u>🎤 Daily Animal Talks</u></p>
+        <p>Our keepers host short presentations where you can learn fascinating facts, ask questions, and see animals up close.
+        </p>
+
+        <p><br><u>🐐 Petting Farm</u></p>
+        <p>Ideal for younger visitors—meet friendly goats, sheep, rabbits, and miniature ponies.
+        </p>
+
+        <p><br><u>🦅 Birds of Prey Show</u></p>
+        <p>A stunning outdoor demonstration showcasing eagles, owls, and hawks in flight.
+            Facilities
+        </p>
+
+        <p><br><u>🍽 Dining</u></p>
+        <p>Enjoy a variety of food options across the zoo:
+            <br>• Savannah Grill – Burgers, wraps, vegetarian meals
+            <br>• Rainforest Café – Smoothies, salads, and freshly baked pastries
+            <br>• Snack Huts – Located throughout the park for quick treats and refreshments
+        </p>
+
+        <p><br><u>🛍 Gift Shop</u></p>
+        <p>Take home a memory! Find plush animals, eco-friendly toys, apparel, and souvenirs.
+        </p>
+
+        <p><br><u>🚻 Restrooms</u></p>
+        <p>Conveniently located at the entrance, near major attractions, and inside dining areas.   
+        </p>
+
+        <p><br><u>♿ Accessibility</u></p>
+        <p>Wildlands Zoo is fully wheelchair-accessible with:
+            <br>• Wide pathways
+            <br>• Ramp access
+            <br>• Mobility scooter rentals
+            <br>• Designated accessible parking spaces
+        </p>
+
+        <p><br><u>👶 Family Services</u></p>
+        <p><br>• Baby changing stations
+            <br>• Stroller rentals
+            <br>• Quiet rooms for nursing or sensory breaks
+        </p> 
+
+        <p><br><u>Visitor Tips</u></p>
+        <p><br>• Best time to visit: Early morning for active animals and fewer crowds.
+            <br>• Stay hydrated: Water refill stations are available throughout the zoo.
+            <br>• Respect wildlife: Do not tap on glass, feed animals, or cross barriers.
+            <br>• Weather: Many areas are outdoors—sun protection or rainwear is recommended depending on the season.</p>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="Footer">
+        <img src="Images/Footer.png" class="FooterImage">
+        <div class="FooterContent">
+            <div class="FooterLogo">RZA</div>
+            <div class="FooterInfo">
+                <p>Call us: 01790-00000</p>
+                <p>Email: <a href="mailto:rzasupport@gmail.com">rzasupport@gmail.com</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="JS/AnimalApi.js"></script>
+</body>
+</html>
