@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Italiana:700');
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat, sans-serif;
+    background-color: #d3ba56;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    gap: 0;
+    font-family: "roboto";
+    user-select: none;
+    background-image: url('../Images/texture.png');
+}
+
+
+/* 
+#############################################################################################################################################
+Display
+#############################################################################################################################################
+*/
+.Display {
+    margin-top: 25vh;
+    grid-row: 1;
+}
+
+.Header {
+    position: absolute;
+    top: 1.85vh;
+    left: 50%;                  
+    transform: translateX(-50%); 
+    width: 93.75vw;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.TopBar {
+    background-color: #566E3D;
+    height: 6.94vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: "italiana";
+    border-top-left-radius: 1.11vw;
+    border-top-right-radius: 1.11vw;
+}
+
+.BottomBar {
+    background-color: #566E3D;
+    margin-top: 0.93vh;
+    height: 9.26vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.13vw;
+    box-shadow: 0 0.37vh 0.56vh rgba(0,0,0,0.3);
+    border-bottom-left-radius: 1.11vw;
+    border-bottom-right-radius: 1.11vw;
+}
+
+.Logo {
+    position: absolute;
+    left: 2.08vw;
+    font-size: 3.75vw;
+    color: #F07A22;
+    font-family: "Just Me Again Down Here";
+}
+
+.SiteTitle {
+    font-size: 2.71vw;
+    color: #B9A44C;
+}
+
+.SiteTitle a {
+    color: #B9A44C;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.SiteTitle a:hover {
+    color: #8d7c39;
+    transform: scale(1.05);
+}
+
+.BottomBar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.56vw;
+    padding: 0.93vh 2.60vw;
+    font-family: "italiana";
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.BottomBar a:hover {
+    color: antiquewhite;
+    transform: scale(1.05);
+}
+
+.BottomBar a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -1.56vw;
+    top: 0.46vh;
+    height: 4.63vh;
+    width: 0.10vw;
+    background-color: #E9DFA4;
+}
+
+
+/* 
+#############################################################################################################################################
+CONTENT
+#############################################################################################################################################
+*/
+
+.Content {
+    grid-row: 2;
+}
+
+.Content p {
+    color: #0C4767;
+    font-size: 24px;
+    margin: 0;
+    margin-left: 4vw;
+}
+
+.Content h {
+    color: #0C4767;
+    font-size: 48px;
+    margin: 0;
+    margin-left: 4vw;
+}
+
+
+.login-btn {
+    margin-left: 4vw;
+    margin-top: 2vh;
+    padding: 1.2vh 2.5vw;
+    font-size: 1.4vw;
+    border: none;
+    border-radius: 0.5vw;
+    background-color: #566E3D;
+    color: white;
+    font-family: italiana;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #09364f;
+    transform: scale(1.05);
+}
+
+
+/* 
+#############################################################################################################################################
+FOOTER
+#############################################################################################################################################
+*/
+
+.Footer {
+    grid-row: 3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.FooterImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 100%; 
+    z-index: 1;
+}
+
+.FooterContent {
+    position: relative;
+    z-index: 2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.39vh;
+    padding: 1.85vh;
+}
+
+.FooterLogo {
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 2.50vw;
+    color: #F07A22;
+}
+
+.FooterInfo p {
+    margin: 0.46vh 0;
+    font-size: 1.67vw;
+}
+
+.FooterInfo a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.FooterInfo a:hover {
+    color: #A9C97F;
+}
+
+
+/* --- ACCOUNT DASHBOARD WRAPPER --- */
+.account-box {
+    width: 88%;
+    margin: 3vh auto;
+    padding: 2.5vw;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
+
+/* --- SECTION BLOCKS --- */
+.account-section {
+    margin-bottom: 5vh;
+}
+
+.account-section h3 {
+    font-size: 1.6vw;
+    margin-bottom: 1.5vh;
+    color: #0C4767;
+    border-left: 4px solid rgb(202, 182, 154);
+    padding-left: 0.6vw;
+}
+
+/* --- TABLE STYLING --- */
+.account-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.2vw;
+    margin-top: 1vh;
+}
+
+.account-table th {
+    background: rgb(202, 182, 154);
+    color: #fff;
+    text-align: left;
+    padding: 1vh 0.8vw;
+    font-weight: 600;
+}
+
+.account-table td {
+    padding: 1vh 0.8vw;
+    border-bottom: 1px solid #ddd;
+}
+
+.account-table tr:nth-child(even) {
+    background: #f7f7f7;
+}
+
+.account-table tr:hover {
+    background: #ececec;
+}
+
+/* --- WELCOME TEXT --- */
+.welcome-inline {
+    margin-left: 4vw;
+    font-size: 1.6vw;
+    font-weight: 600;
+    color: #0C4767;
+}
+
+/* --- INFO TEXT (login message) --- */
+.info-text {
+    margin-left: 4vw;
+    margin-top: 1.5vh;
+    color: #0C4767;
+    font-size: 1.3vw;
+}
+
+/* --- LOGOUT BUTTON (matches login button style) --- */
+.logout-btn {
+    background: #566E3D;
+    padding: 0.8vw 2vw;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.2vw;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.logout-btn:hover {
+    background:#0C4767;
+    color: white;
+}
+
+/* Compact cancel button used in account table */
+.cancel-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 0;
+    border-radius: 0.4rem;
+    background: #f3d6d6;
+    color: #8a1f1f;
+    border: 1px solid rgba(138,31,31,0.12);
+    font-size: 1.0rem;
+    cursor: pointer;
+}
+.cancel-btn:hover { background: #f1bfc0; transform: scale(1.05); }
+
+.account-table td.action-cell, .account-table th.action-cell { text-align: center; width: 6rem; }

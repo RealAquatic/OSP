@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RZA | Login</title>
+    <link rel="stylesheet" href="CSS/loginandsignup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Display -->
+    <div class="Display">
+        <div class="Header">
+            <div class="TopBar">
+                <div class="Logo">RZA</div>
+                <div class="SiteTitle"><a href="index.html">Riget Zoo Adventures</a></div>
+            </div>
+
+            <div class="BottomBar">
+                <a href="booking.php">Book Your Tickets</a>
+                <a href="educational.html">Educational Visits</a>
+                <a href="information.html">Information</a>
+                <a href="account.php" style="color: rgb(202, 182, 154);">Account</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="Content">
+        <p>Experience Riget Zoo Adventures</p>
+        <h>Login</h>
+
+        <form class="LoginForm" action="PHP/process_login.php" method="POST">
+
+            <p>Email</p>
+            <input type="email" name="email" placeholder="Registered Email" required>
+
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Password" required>
+
+            <button type="submit" class="login-submit">Login</button>
+
+            <p class="signup-text">
+                Don't have an account? 
+                <a href="signup.html">Sign up here</a>
+            </p>
+
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="Footer">
+        <img src="Images/Footer.png" class="FooterImage">
+        <div class="FooterContent">
+            <div class="FooterLogo">RZA</div>
+            <div class="FooterInfo">
+                <p>Call us: 01790-00000</p>
+                <p>Email: <a href="mailto:rzasupport@gmail.com">rzasupport@gmail.com</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

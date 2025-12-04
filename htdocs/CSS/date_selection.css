@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Italiana:700');
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat, sans-serif;
+    background-color: #d3ba56;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 0;
+    font-family: "roboto";
+    user-select: none;
+    background-image: url('../Images/texture.png');
+}
+
+/* HEADER + NAVIGATION (unchanged) */
+.Display {
+    margin-top: 25vh;
+    grid-row: 1;
+}
+
+.Header {
+    position: absolute;
+    top: 1.85vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 93.75vw;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.TopBar {
+    background-color: #566E3D;
+    height: 6.94vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: "italiana";
+    border-top-left-radius: 1.11vw;
+    border-top-right-radius: 1.11vw;
+}
+
+.BottomBar {
+    background-color: #566E3D;
+    margin-top: 0.93vh;
+    height: 9.26vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.13vw;
+    box-shadow: 0 0.37vh 0.56vh rgba(0,0,0,0.3);
+    border-bottom-left-radius: 1.11vw;
+    border-bottom-right-radius: 1.11vw;
+}
+
+.Logo {
+    position: absolute;
+    left: 2.08vw;
+    font-size: 3.75vw;
+    color: #F07A22;
+    font-family: "Just Me Again Down Here";
+}
+
+.SiteTitle {
+    font-size: 2.71vw;
+    color: #B9A44C;
+}
+
+.SiteTitle a {
+    color: #B9A44C;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.BottomBar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.56vw;
+    padding: 0.93vh 2.60vw;
+    font-family: "italiana";
+    position: relative;
+    transition: 0.3s;
+}
+
+/* CONTENT */
+.Content {
+    margin-top: 5vh;
+    grid-row: 2;
+    padding: 0 5vw;
+}
+
+.Content h {
+    padding-top: 50px;
+    color: #0C4767;
+    font-size: 64px;
+    margin-left: 5vw;
+}
+
+.Content p {
+    margin-left: 5vw;
+    color: #0C4767;
+    font-size: 30px;
+}
+
+/* LEGEND */
+.Legend {
+    margin: 4vh auto;
+    padding: 2vh 2vw;
+    width: 90%;
+    background: #ffffff80;
+    border-radius: 1.2vw;
+    border: 0.3vw solid #0C4767;
+    display: flex;
+    gap: 3vw;
+}
+
+.legend-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+
+.legend-colour {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 0.6vw;
+    border: 0.25vw solid #000;
+}
+
+.legend-unavailable { background: #bfbfbf; }
+.legend-available   { background: #7ded87; }
+.legend-full        { background: #ff6b6b; }
+
+.legend-label {
+    font-size: 1.4vw;
+    color: #0C4767;
+    font-weight: bold;
+}
+
+/* CALENDAR BOX */
+.CalendarBox {
+    margin: 5vh auto;
+    width: 90%;
+    background: #ffffff90;
+    padding: 2vw;
+    border-radius: 1.5vw;
+    border: 0.35vw solid #0C4767;
+}
+
+.calendar-title {
+    font-size: 2.8vw;
+    text-align: center;
+    color: #0C4767;
+    font-family: italiana;
+}
+
+/* GRID */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.8vw;
+    margin-top: 2vh;
+}
+
+.calendar-day-name {
+    text-align: center;
+    font-size: 1.5vw;
+    color: #0C4767;
+}
+
+/* DAY CELLS */
+.calendar-day {
+    width: 90%;
+    aspect-ratio: 1/1;
+    border-radius: 0.8vw;
+    border: 0.22vw solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8vw;
+    font-weight: bold;
+    color: #0C4767;
+}
+
+/* AVAILABLE */
+.calendar-day.available {
+    background: #7ded87;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.calendar-day.available:hover {
+    background: #63c96c;
+    transform: scale(1.05);
+}
+
+/* FULL */
+.calendar-day.full {
+    background: #ff6b6b;
+}
+
+/* UNAVAILABLE / past / prev month / next month */
+.calendar-day.unavailable {
+    background: #bfbfbf;
+}
+
+/* FOOTER */
+.Footer {
+    margin-top: 5vh;
+    grid-row: 3;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.FooterImage {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.FooterContent {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.39vh;
+}
+
+.FooterLogo {
+    font-family: "Just Me Again Down Here";
+    font-size: 2.5vw;
+}
