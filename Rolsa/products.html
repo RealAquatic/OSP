@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Products - Rolsa Technologies</title>
+  <link rel="stylesheet" href="Assets/CSS/Header.css">
+  <link rel="stylesheet" href="Assets/CSS/Main.css">
+  <link rel="stylesheet" href="Assets/CSS/Footer.css">
+  <style>
+    .ProductHero { max-width:1200px; margin:2rem auto 0; padding:0 1.25rem; }
+    .ProductList { max-width:1200px; margin:1.5rem auto; padding:0 1.25rem; display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; }
+    .ProductDetail { background:#fff; border-radius:12px; padding:1rem; box-shadow:0 4px 12px rgba(0,0,0,0.06); }
+    .ProductDetail h3 { margin-top:0; }
+    .ProductCTA { text-align:center; margin-top:0.75rem; }
+    @media (max-width:900px) { .ProductList{ grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <div class="Header">
+    <div class="Logo"><a href="/index.html"><img class="LogoImg" src="Assets/Images/RolsaLogo.png" alt="Rolsa Logo"></a></div>
+    <nav class="Navigation">
+      <a href="/index.html#home">Home</a>
+      <a href="/index.html#aboutus">About us</a>
+      <a href="/products.html">Products</a>
+      <a href="/index.html#consultations">Consultations</a>
+      <a href="/index.html#calculator">Calculator</a>
+    </nav>
+    <a class="Account" href="/Assets/PHP/account.php"><img class="AccountImg" src="Assets/Images/YourAccountImage.png" alt="Your Account"><div class="AccountLabel">Your Account</div></a>
+  </div>
+
+  <main class="Main" style="padding-top: calc(var(--header-height) + 1rem);">
+    <div class="ProductHero">
+      <h1>Our Products</h1>
+      <p>Explore our range of sustainable energy and smart home solutions. Below you'll find more detailed information about each product and how they can help reduce energy use and carbon footprint.</p>
+    </div>
+
+    <section class="ProductList">
+      <article id="solar" class="ProductDetail">
+        <img src="Assets/Images/product1.png" alt="Solar" style="width:100%; height:200px; object-fit:cover; border-radius:8px;">
+        <h3>Solar</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel lacus sit amet neque vulputate interdum. Sed ultricies, augue in commodo dictum, lorem augue tempus lorem, sit amet efficitur ipsum magna at elit. Cras id ligula at tortor lobortis vulputate. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas vitae mauris nec velit interdum fermentum. Praesent nec lorem in nibh facilisis efficitur. Aliquam erat volutpat. Curabitur non arcu at ipsum volutpat aliquet. Phasellus vulputate, nibh non vulputate faucibus, lorem massa lacinia mauris, at efficitur justo magna at risus.</p>
+        <p>Integer scelerisque, ipsum sed cursus dictum, purus erat dictum lectus, sit amet feugiat nisl elit vitae libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc euismod arcu ac risus tincidunt, vitae efficitur mi aliquet.</p>
+        <div class="ProductCTA"><a class="PrimaryButton" href="/index.html#consultations">Book a consultation now!</a></div>
+      </article>
+
+      <article id="ev-charging" class="ProductDetail">
+        <img src="Assets/Images/product2.png" alt="EV Charging" style="width:100%; height:200px; object-fit:cover; border-radius:8px;">
+        <h3>EV Charging</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae sapien eu arcu venenatis faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer accumsan magna non magna pharetra, in gravida massa consectetur. Nam lacinia, nisl nec fermentum volutpat, lectus arcu posuere dui, id posuere tellus lorem sed arcu. In dapibus, urna nec faucibus elementum, arcu est dapibus nisl, sed tincidunt risus nunc sed lorem. Vivamus dictum, elit in malesuada facilisis, orci nulla hendrerit nunc, id porta sapien nulla sit amet arcu.</p>
+        <p>Morbi suscipit, tellus nec posuere venenatis, est urna fermentum ante, id iaculis arcu risus non nisl. Sed posuere, neque non efficitur sodales, sapien lorem laoreet lacus, ut volutpat tortor velit sit amet lorem.</p>
+        <div class="ProductCTA"><a class="PrimaryButton" href="/index.html#consultations">Book a consultation now!</a></div>
+      </article>
+
+      <article id="smart-home" class="ProductDetail">
+        <img src="Assets/Images/product3.png" alt="Smart Home Device" style="width:100%; height:200px; object-fit:cover; border-radius:8px;">
+        <h3>Smart Home Device</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer rhoncus, tortor sit amet dapibus ornare, lectus mi luctus augue, quis elementum risus urna vitae neque. Duis in lorem ut augue pharetra efficitur. Sed at nibh id mi posuere cursus. Suspendisse ac justo id mi volutpat gravida. Mauris sed mi nisi. Donec at mattis ipsum, in posuere mauris. Curabitur ornare, orci sed tincidunt consequat, arcu urna lacinia mi, a luctus augue risus in mi.</p>
+        <p>Fusce volutpat, ligula a vestibulum convallis, tortor mi suscipit nibh, id molestie libero arcu quis magna. Integer ac massa a odio vulputate posuere sit amet sit amet nibh. Aliquam sit amet augue sed erat mattis dictum.</p>
+        <div class="ProductCTA"><a class="PrimaryButton" href="/index.html#consultations">Book a consultation now!</a></div>
+      </article>
+    </section>
+  </main>
+
+  <div class="Footer">
+    <div class="FooterInner">
+      <div class="FooterLeft">
+        <img class="FooterLogo" src="Assets/Images/WhiteLogo.png" alt="Rolsa White Logo">
+        <div class="FooterCopy">© 2026 Rolsa Technologies. All rights reserved.</div>
+        <div class="FooterDetails">
+          <div>Stamford Drift Road, Cambridgeshire </div>
+          <div>support@rolsa.com</div>
+          <div>+44 01777 666888</div>
+        </div>
+      </div>
+      <div class="FooterRight">
+        <div class="FooterBlock">
+          <div class="FooterTitle">Navigation</div>
+          <div class="FooterBar"></div>
+          <ul class="FooterList">
+            <li><a href="/index.html#home">Home</a></li>
+            <li><a href="/index.html#aboutus">About Us</a></li>
+            <li><a href="/products.html">Products</a></li>
+            <li><a href="/index.html#consultations">Consultations</a></li>
+            <li><a href="/index.html#calculator">Calculator</a></li>
+          </ul>
+        </div>
+        <div class="FooterBlock">
+          <div class="FooterTitle">Legal</div>
+          <div class="FooterBar"></div>
+          <ul class="FooterList">
+            <li><a href="/privacy.html">Privacy policy</a></li>
+            <li><a href="/terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="/cookies.html">Cookie policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="Assets/JS/cookies.js"></script>
+</body>
+</html>

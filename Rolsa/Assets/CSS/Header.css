@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Italiana:700');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --header-height: 80px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', montserrat, sans-serif;
+    background-color: #F4F4F9;
+    min-height: 100vh;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =====================
+   Header
+   ===================== */
+.Header {
+    height: var(--header-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: rgba(255,255,255,0.95);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.Header .Logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.Header .LogoImg {
+    height: auto;
+    width: auto;
+    /* keep logo visually inside the header */
+    max-height: calc(var(--header-height) - 18px);
+    display: block;
+}
+
+.Navigation {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0.5rem, 1.5vw, 0.75rem);
+    min-width: 0;
+    z-index: 10000;
+}
+
+.Navigation a {
+    color: #175424;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 150ms ease, color 150ms ease;
+    padding: 0 0.35rem;
+    font-size: clamp(0.9rem, 1.6vw, 1rem);
+    white-space: nowrap;
+}
+
+.Navigation a:hover,
+.Navigation a:focus {
+    transform: scale(1.06);
+    color: #0f3e1c;
+}
+
+.Account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-right: 1.5rem;
+    text-decoration: none;
+    gap: 0.25rem;
+}
+
+.AccountImg {
+    height: 40%;
+    width: auto;
+    display: block;
+    transition: transform 150ms ease;
+    cursor: pointer;
+    transform-origin: center;
+}
+
+.Account:hover .AccountImg,
+.Account:focus .AccountImg {
+    transform: scale(1.08);
+}
+
+.AccountLabel {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: #175424;
+    margin-top: 4px;
+    text-align: center;
+    transition: transform 150ms ease, color 150ms ease;
+    transform-origin: center;
+}
+
+.Account:hover .AccountLabel,
+.Account:focus .AccountLabel {
+    transform: scale(1.06);
+}
+
+@media (max-width: 520px) {
+    :root { --header-height: 110px; }
+    .Navigation {
+        position: static;
+        transform: none;
+        flex-direction: column;
+        gap: 0.4rem;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0.4rem;
+    }
+    .Header {
+        padding: 0.5rem 0.75rem;
+        height: auto;
+    }
+    .Header .LogoImg { max-height: 48px; height: auto; }
+    .AccountImg { height: 34%; }
+}
+
+@media (max-width: 420px) {
+    :root { --header-height: 96px; }
+    .Header .LogoImg { max-height: 40px; height: auto; }
+    .AccountImg { height: 32%; }
+}

@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css?family=Italiana:700');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --header-height: 80px;
+}
+
+html, body {    
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', montserrat, sans-serif;
+    background-color: #F4F4F9;
+    min-height: 100vh;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =====================
+   Main body
+   ===================== */
+.BackgroundImage {
+    position: relative;
+    overflow: hidden;
+    background-image: none;
+    margin-top: var(--header-height);
+}
+
+.BackgroundImage .HeroImg {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    :root { --header-height: 64px; }
+}
+
+@media (max-width: 420px) {
+    :root { --header-height: 56px; }
+}
+
+.Section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem 0;
+}
+
+.SectionInner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.Section h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2rem;
+    color: #1f3f2a;
+    text-align: center;
+}
+
+.Section p {
+    margin: 0;
+    color: #333;
+}
+
+.BackgroundImage,
+.Section {
+    scroll-margin-top: calc(var(--header-height) + 8px);
+}  
+
+.BoxesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.InfoBox {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+    border: 1px solid rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.BoxTitle {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #1f3f2a;
+}
+
+.BoxUnderline {
+    height: 2px;
+    width: 80%;
+    background: #d1d1d1;
+    margin: 0.35rem auto 0.5rem auto;
+    border-radius: 2px;
+}
+
+.InfoBox p {
+    margin: 0;
+    color: #444;
+    line-height: 1.4;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 720px) {
+    .BoxesGrid { grid-template-columns: 1fr; }
+}
+
+/* =====================
+   Products
+   ===================== */
+.ProductsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.ProductCard {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.ProductCard a,
+.ProductCard a:link,
+.ProductCard a:visited,
+.ProductCard a:hover,
+.ProductCard a:active,
+.ProductCard a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+.ProductCard .ProductTitle,
+.ProductCard .ProductDesc {
+    text-decoration: none;
+}
+
+.ProductImg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.ProductTitle {
+    margin: 0;
+    font-size: 1.125rem;
+    color: #1f3f2a;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.ProductDesc {
+    margin: 0;
+    color: #444;
+    line-height: 1.4;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.ProductsActions {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.PrimaryButton {
+    display: inline-block;
+    background: #33683E;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .ProductsGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 720px) {
+    .ProductsGrid { grid-template-columns: 1fr; }
+}
+
+.AboutUs {
+    background-color: #F4F4F9;
+}
+.OurProducts {
+    background-color: #F4F4F9;
+}
+.Consultations {
+    background-color: #F4F4F9;
+}
+.Calculator {
+    background-color: #F4F4F9;
+}
+
+/* =====================
+   Consultations Form
+   ===================== */
+.ConsultForm {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    border: 3px solid rgba(0,0,0,0.04);
+    margin-top: 1rem;
+}
+
+.ConsultForm .FormRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.ConsultForm .FormRow.full {
+    grid-template-columns: 1fr;
+}
+
+.FormGroup label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.FormGroup input,
+.FormGroup select,
+.FormGroup textarea {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    border-radius: 8px;
+    border: 3px solid rgba(0,0,0,0.08);
+    box-sizing: border-box;
+    font-size: 0.95rem;
+    font-family: inherit;
+}
+
+.FormGroup textarea { min-height: 140px; resize: vertical; }
+
+.FormActions { text-align: center; margin-top: 0.75rem; }
+
+@media (max-width: 720px) {
+    .ConsultForm .FormRow { grid-template-columns: 1fr; }
+}
+
+.eMsg {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* =====================
+   Calculator
+   ===================== */
+.CalcBox {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.04);
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.CalcToggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.CalcToggleBtn {
+    background: transparent;
+    border: none;
+    padding: 0.6rem 0.9rem;
+    font-size: 1.15rem;
+    cursor: pointer;
+    color: #000;
+}
+
+.CalcToggleBtn.active {
+    color: #33683E;
+    background: transparent;
+    border-radius: 0;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.CalcToggleSeparator { color: #bbb; }
+
+.CalcControls { display: flex; gap: 1rem; flex-direction: column; }
+.CalcSection { display: block; }
+.CalcSection label { display: block; margin-bottom: 0.4rem; text-align: center; font-size: 1rem; }
+.CalcSection input[type="number"], .CalcSection select { width: 200px; padding: 0.6rem; border-radius: 6px; border: 1px solid rgba(0,0,0,0.08); font-size: 1.05rem; display:block; margin:0 auto; }
+
+.CalcResult { background:#f7f9f7; border-radius:8px; padding:1rem; border:1px solid rgba(0,0,0,0.04); }
+.CalcResultInner h3 { margin:0 0 0.5rem 0; }
+#calcOutput { min-height:48px; color:#1f3f2a; }
+
+.CalcFooter { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+.CalcHelp { color:#333; }
+
+@media (max-width:720px) {
+    .CalcSection input[type="number"], .CalcSection select { width: 100%; }
+    .CalcFooter { flex-direction:column; align-items:stretch; }
+}
+
+/* Modal */
+.ModalOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.ModalContent {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    max-width: 620px;
+    width: calc(100% - 2rem);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+    position: relative;
+}
+.ModalContent h3 { margin-top: 0; color: #1f3f2a; }
+.ModalContent ul { margin: 0.5rem 0 0 1.25rem; color: #333; }
+.ModalClose {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.25rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    color: #666;
+}
+
+@media (max-width:480px) {
+    .ModalContent { padding: 1rem; }
+    .ModalClose { font-size: 1.25rem; }
+}
+
+/* =====================
+   Electric Vehicles
+   ===================== */
+.EV {
+    background-color: #F4F4F9;
+}
+
+.EVSearchBox {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.04);
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.EVSearchForm {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.EVCitySelect {
+    flex: 1;
+    min-width: 250px;
+    max-width: 600px;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 2px solid rgba(0,0,0,0.08);
+    font-size: 0.95rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.EVCitySelect:focus {
+    outline: none;
+    border-color: #33683E;
+    box-shadow: 0 0 0 3px rgba(51, 104, 62, 0.1);
+}
+
+#EVSearchBtn {
+    padding: 0.75rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#EVSearchBtn:hover {
+    background: #2a5530;
+    transition: background 0.2s;
+}
+
+.EVLoadingIndicator {
+    text-align: center;
+    padding: 1rem;
+    color: #666;
+    font-style: italic;
+}
+
+.EVResultsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.EVVehicleCard {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.EVVehicleHeader {
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 0.75rem;
+}
+
+.EVVehicleTitle {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #1f3f2a;
+    font-weight: 700;
+}
+
+.EVVehicleSubtitle {
+    margin: 0.25rem 0 0 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.EVSpecSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.EVSpecSectionTitle {
+    font-weight: 700;
+    color: #1f3f2a;
+    font-size: 1rem;
+    margin: 0.5rem 0 0 0;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.EVSpec {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    color: #333;
+    padding: 0.4rem 0;
+}
+
+.EVSpecLabel {
+    font-weight: 600;
+    color: #1f3f2a;
+}
+
+.EVSpecValue {
+    color: #666;
+    text-align: right;
+}
+
+.EVNoResults {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #666;
+    font-size: 1.05rem;
+}
+
+.EVChargerLocation {
+    background: #f0f8f5;
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.EVCoordinates {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #1f3f2a;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .EVSearchForm {
+        flex-direction: column;
+    }
+    
+    .EVSearchInput {
+        max-width: 100%;
+    }
+    
+    #EVSearchBtn {
+        width: 100%;
+    }
+    
+    .EVResultsContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
